@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opengift"
+version = "0.2.0"
+description = "OpenGift：纯 Python 零依赖、运行内存<30MB 的类 OpenClaw AI Agent（默认硅基流动 Qwen/Qwen3-8B，Key 自填）"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "OpenGift" }]
+keywords = ["ai", "agent", "llm", "opengift", "chatbot", "cli", "lightweight"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+
+[project.scripts]
+opengift = "opengift:main"
+
+[tool.setuptools]
+py-modules = ["opengift"]
